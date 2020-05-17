@@ -1,0 +1,13 @@
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over browser:
+header contains Content-type; application/json
+that tells the server the data is JSON
+end note
+
+server-->browser: CODE 201
+
+note over browser:
+spa.js adds new note to local data
+and redraws frame
+end note

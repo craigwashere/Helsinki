@@ -1,0 +1,25 @@
+{
+  "name": "part3",
+  "version": "1.0.0",
+  "description": "backend stuff",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build:ui": "rmdir build /s /q && cd /users/Beaubien/part2 && npm run build && xcopy build /Users/Beaubien/Documents/Helsinki/Helsinki/part3/phonebook/build /s /e /y /i",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "proxy": "http://localhost:3001",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
